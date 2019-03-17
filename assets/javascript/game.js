@@ -15,8 +15,8 @@
         $("#user-result").text(userTotal);
     });
     function reset(){
-        Random=Math.floor(Math.random()*101+19);
-        console.log(Random)
+        computerChoice=Math.floor(Math.random()*101+19);
+        console.log(computerChoice)
         $("#computer-result").text(computerChoice);
         num1= Math.floor(Math.random()*12+1);
         num2= Math.floor(Math.random()*12+1);
