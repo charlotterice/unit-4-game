@@ -5,54 +5,71 @@
     var redCrystal =Math.floor(Math.random()*12)+1;
     var wins =0;
     var losses =0;
+    var userTotal=0;
+
+    $("#wins").text(wins);
+    $("#losses").text(losses);
+
     $(document).ready(function() {
         console.log(computerChoice);
         $("#computer-result").text(computerChoice);
+        $("#wins").text(wins);
+        $("#losses").text(losses);
+        $("#user-result").text(userTotal);
     });
+    function win(){
+        alert("You won!");
+          wins++; 
+          $("#wins").text(wins);
+        //   reset();
+        }
+        function lose(){
+        alert ("You lose!");
+          losses++;
+          $("#losses").text(losses);
+        //   reset()
+        }
  $("#button-green").on("click",function(){
      console.log(greenCrystal);
- });
+     userTotal = userTotal + greenCrystal;
+     console.log("New userTotal=" + userTotal);
+     if (userTotal ==computerChoice){
+         win();
+     }
+     else if(userTotal > computerChoice){
+         lose();
+     }
+     });
  $("#button-yellow").on("click",function(){
      console.log(yellowCrystal);
- });
+     userTotal = userTotal + yellowCrystal;
+     console.log("New userTotal=" + userTotal);
+     if (userTotal ==computerChoice){
+         win();
+     }
+     else if(userTotal > computerChoice){
+         lose();
+     }
+     });
  $("#button-blue").on("click",function(){
      console.log(blueCrystal);
- });
+     userTotal = userTotal + blueCrystal;
+     console.log("New userTotal=" + userTotal);
+     if (userTotal ==computerChoice){
+         win();
+     }
+     else if(userTotal > computerChoice){
+         lose();
+     }
+     });
  $("#button-red").on("click",function(){
      console.log(redCrystal);
- });
-;
-    // function startup(){
-    //     wins=0
-    //     losses=0
-    //     userInput=[];
-    // }
-    
-    // document.onkeydown = function(event) {
-    //     var userGuess = event.key;
-    //    if (letterArray.indexOf(userGuess) > -1) {
-    
-    //        if (userGuess === computerChoice) {
-    //            wins++;
-    //            lives = 10;
-    //            userInput = [];
-    //        }
-           
-    //        if (userGuess != computerChoice) {
-    //            lives --;
-    //            userInput.push(userGuess);
-    //        }
-    
-    //        if (lives === 0) 
-    //        {
-    //        lives = 10;
-    //        losses ++;
-    //        userInput = [];
-    //        } 
-    //    guessedSpan.innerHTML=event.key;
-    //    winsSpan.textContent=wins;
-    //    lossesSpan.textContent=losses;
-    //    livesSpan.textContent=lives;
-    // }
-    // }
-    
+     userTotal = userTotal + redCrystal;
+     console.log("New userTotal=" + userTotal);
+     if (userTotal ==computerChoice){
+         win();
+     }
+     else if(userTotal > computerChoice){
+         lose();
+     }
+     });
