@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Game</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Added a link to our external stylesheet-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+<!-- Jumbotron for Title -->
+<div class="jumbotron">
+    <h1 class="text-center">Crystal Collector!</h1>
+    <br>
+    <h6 class="text-center">
+    <p>You will be given a random number at the start of the game.</p>
+    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+    <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number
+    The value of each crystal is hidden from you until you click on it.</p>
+    <p>Each time when the game starts the game will change the values of each crystal.</p>
+    </p>
+    </h6>
+</div>
+
+<div class="container">
+
+    <div class="row-1">
+          <!-- Random number card -->
+      <div class="col-lg-6">
+            <div class="card">
+              <h3 class="card-header">Random Number to Match:</h3>
+              <div class="card-body">
+                <h1 id="computer-result"></h1>
+              </div>
+            </div>
+          </div>
+    </div>
+      <!-- Crystals Card -->
+      <div class=row-2>
+        <div class="col-lg-6">
+            <div class="card">
+                 <h3 class="card-header">Crystals</h3>
+                <div class="card-body">
+                <div class=row-2a>
+                    
+                    <button id="button-green" class="btn btn-green-crystal" value=""></button>
+                    <button id="button-yellow" class="btn btn-yellow-crystal" value=""></button>
+                    <button id="button-blue" class="btn btn-blue-crystal" value=""></button>
+                    <button id="button-red" class="btn btn-red-crystal" value=""></button>
+                </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Your total score is: -->
+      <div class=row-3>
+        <div class="col-lg-6">
+            <div class="card">
+              <h3 class="card-header">Your Total Score:</h3>
+              <div class="card-body">
+                <h1 id="user-result"></h1>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+</html>

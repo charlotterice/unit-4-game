@@ -1,0 +1,24 @@
+body{
+    background-image:url(../images/green_dust_scratch.png)
+}
+#button-green{
+    background: lightgreen;
+}
+#button-yellow{
+    background:lightyellow;
+}
+#button-blue{
+    background:lightskyblue;
+}
+#button-red{
+    background:palevioletred;
+}
+.jumbotron{
+    line-height: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #abdacc;
+    border-bottom:solid lightslategray;
+}
+h1{
+    font-weight:bold;
+}
