@@ -1,18 +1,27 @@
-var computerChoice = Math.floor(Math.random()*120)+19
-var greenCrystal =Math.floor(Math.random()*12)+1;
-var yellowCrystal =Math.floor(Math.random()*12)+1;
-var blueCrystal =Math.floor(Math.random()*12)+1;
-var redCrystal =Math.floor(Math.random()*12)+1;
-var wins =0;
-var losses =0;
-
-$(document).ready(function() {
-    
-
-    
+    var computerChoice = Math.floor(Math.random()*120)+19;
+    var greenCrystal =Math.floor(Math.random()*12)+1;
+    var yellowCrystal =Math.floor(Math.random()*12)+1;
+    var blueCrystal =Math.floor(Math.random()*12)+1;
+    var redCrystal =Math.floor(Math.random()*12)+1;
+    var wins =0;
+    var losses =0;
+    $(document).ready(function() {
+        console.log(computerChoice);
+        $("#computer-result").text(computerChoice);
     });
-
-
+ $("#button-green").on("click",function(){
+     console.log(greenCrystal);
+ });
+ $("#button-yellow").on("click",function(){
+     console.log(yellowCrystal);
+ });
+ $("#button-blue").on("click",function(){
+     console.log(blueCrystal);
+ });
+ $("#button-red").on("click",function(){
+     console.log(redCrystal);
+ });
+;
     // function startup(){
     //     wins=0
     //     losses=0
