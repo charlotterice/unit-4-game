@@ -32,19 +32,31 @@
 
 <div class="container">
 
-    <div class="row-1">
+    <div class="row">
           <!-- Random number card -->
-      <div class="col-lg-6">
+         <div class="col-lg-6">
             <div class="card">
               <h3 class="card-header">Random Number to Match:</h3>
               <div class="card-body">
                 <h1 id="computer-result"></h1>
               </div>
             </div>
-          </div>
+        </div>
+        <!-- Wins and Losses tally -->
+        <div class="col-lg-6">
+            <div class="card">
+                <h3 class="card-header">Running Tally</h3>
+                    <div class="card-body">
+                    <div class="row">Wins:</div>
+                    <h1 id="wins"></h1>
+                    <div class="row">Losses:</div>
+                    <h1 id="losses"></h1>
+                </div>
+            </div>
+        </div>
     </div>
       <!-- Crystals Card -->
-      <div class=row-2>
+      <div class=row>
         <div class="col-lg-6">
             <div class="card">
                  <h3 class="card-header">Crystals</h3>
@@ -60,9 +72,10 @@
             </div>
         </div>
       </div>
-
+      <br>
+      <br>
       <!-- Your total score is: -->
-      <div class=row-3>
+      <div class=row>
         <div class="col-lg-6">
             <div class="card">
               <h3 class="card-header">Your Total Score:</h3>
