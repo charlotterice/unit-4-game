@@ -1,14 +1,11 @@
-    var computerChoice = Math.floor(Math.random()*120)+19;
-    var greenCrystal =Math.floor(Math.random()*12)+1;
-    var yellowCrystal =Math.floor(Math.random()*12)+1;
-    var blueCrystal =Math.floor(Math.random()*12)+1;
-    var redCrystal =Math.floor(Math.random()*12)+1;
+    var computerChoice = Math.floor(Math.random()*101+19);
+    var greenCrystal =Math.floor(Math.random()*12+1);
+    var yellowCrystal =Math.floor(Math.random()*12+1);
+    var blueCrystal =Math.floor(Math.random()*12+1);
+    var redCrystal =Math.floor(Math.random()*12+1);
     var wins =0;
     var losses =0;
     var userTotal=0;
-
-    $("#wins").text(wins);
-    $("#losses").text(losses);
 
     $(document).ready(function() {
         console.log(computerChoice);
@@ -17,18 +14,30 @@
         $("#losses").text(losses);
         $("#user-result").text(userTotal);
     });
+    function reset(){
+        Random=Math.floor(Math.random()*101+19);
+        console.log(Random)
+        $("#computer-result").text(computerChoice);
+        num1= Math.floor(Math.random()*12+1);
+        num2= Math.floor(Math.random()*12+1);
+        num3= Math.floor(Math.random()*12+1);
+        num4= Math.floor(Math.random()*12+1);
+        userTotal= 0;
+        $("#user-result").text(userTotal);
+        } 
     function win(){
-        alert("You won!");
+        alert("You win!");
           wins++; 
           $("#wins").text(wins);
-        //   reset();
+          reset();
         }
         function lose(){
-        alert ("You lose!");
+        alert ("You lost!");
           losses++;
           $("#losses").text(losses);
-        //   reset()
+          reset()
         }
+
  $("#button-green").on("click",function(){
      console.log(greenCrystal);
      userTotal = userTotal + greenCrystal;
@@ -39,7 +48,9 @@
      else if(userTotal > computerChoice){
          lose();
      }
+     $("#user-result").text(userTotal);
      });
+
  $("#button-yellow").on("click",function(){
      console.log(yellowCrystal);
      userTotal = userTotal + yellowCrystal;
@@ -50,7 +61,9 @@
      else if(userTotal > computerChoice){
          lose();
      }
+     $("#user-result").text(userTotal);
      });
+
  $("#button-blue").on("click",function(){
      console.log(blueCrystal);
      userTotal = userTotal + blueCrystal;
@@ -61,7 +74,9 @@
      else if(userTotal > computerChoice){
          lose();
      }
+     $("#user-result").text(userTotal);
      });
+
  $("#button-red").on("click",function(){
      console.log(redCrystal);
      userTotal = userTotal + redCrystal;
@@ -72,4 +87,5 @@
      else if(userTotal > computerChoice){
          lose();
      }
+     $("#user-result").text(userTotal);
      });
