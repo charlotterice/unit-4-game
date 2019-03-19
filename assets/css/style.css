@@ -3,15 +3,27 @@ body{
 }
 #button-green{
     background: lightgreen;
+    padding:20px;
+    margin:10px;
+    border:solid lightslategray;
 }
 #button-yellow{
     background:lightyellow;
+    padding:20px;
+    margin:10px;
+    border:solid lightslategray;
 }
 #button-blue{
     background:lightskyblue;
+    padding:20px;
+    margin:10px;
+    border:solid lightslategray;
 }
 #button-red{
     background:palevioletred;
+    padding:20px;
+    margin:10px;
+    border:solid lightslategray;
 }
 .jumbotron{
     line-height: 1;
@@ -23,4 +35,9 @@ h1{
     font-weight:bold;
 }
 #computer-result{
+    text-align:center;
+    font-size:128px;
+}
+#user-score-card{
+    padding-bottom: 10px;
 }

@@ -18,10 +18,10 @@
         computerChoice=Math.floor(Math.random()*101+19);
         console.log(computerChoice)
         $("#computer-result").text(computerChoice);
-        num1= Math.floor(Math.random()*12+1);
-        num2= Math.floor(Math.random()*12+1);
-        num3= Math.floor(Math.random()*12+1);
-        num4= Math.floor(Math.random()*12+1);
+        greenCrystal= Math.floor(Math.random()*12+1);
+        yellowCrystal= Math.floor(Math.random()*12+1);
+        blueCrystal= Math.floor(Math.random()*12+1);
+        redCrystal= Math.floor(Math.random()*12+1);
         userTotal= 0;
         $("#user-result").text(userTotal);
         } 
